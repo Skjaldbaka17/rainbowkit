@@ -1,8 +1,8 @@
 import {
   trustWallet
-} from "../chunk-X63XYYB6.js";
-import "../chunk-FJVNKOUD.js";
+} from "../chunk-FMPDUURS.js";
 import "../chunk-3EC5YRTY.js";
+import "../chunk-FJVNKOUD.js";
 export {
   trustWallet
 };

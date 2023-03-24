@@ -1,9 +1,9 @@
 import {
-  midnightTheme
-} from "./chunk-O2CXI27D.js";
-import {
   darkTheme
 } from "./chunk-FRF2GUPO.js";
+import {
+  midnightTheme
+} from "./chunk-O2CXI27D.js";
 import {
   ConnectButton,
   DesktopOptions,
@@ -24,7 +24,7 @@ import {
   useChainModal,
   useConnectModal,
   useTransactionStore
-} from "./chunk-C5SJ6OD3.js";
+} from "./chunk-DLCHE6EK.js";
 import {
   lightTheme
 } from "./chunk-ATKR4544.js";

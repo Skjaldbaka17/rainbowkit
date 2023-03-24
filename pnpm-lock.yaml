@@ -337,10 +337,10 @@ importers:
   packages/rainbowkit-siwe-next-auth:
     specifiers:
       '@rainbow-me/rainbowkit': workspace:*
-      siwe: ^1.1.6
+      siwe: ^2.1.3
     devDependencies:
       '@rainbow-me/rainbowkit': link:../rainbowkit
-      siwe: 1.1.6
+      siwe: 2.1.3
 
   site:
     specifiers:
@@ -5074,6 +5074,16 @@ packages:
     resolution: {integrity: sha512-oQ8PcwDqjGWJvLmvAF2yzd6iniiWxK0Qtz+Dw+gLD/W5zOQJiKIUXwslHOm8VB8OOOKW9vfR3dnPBhHaZDvRsw==}
     dependencies:
       apg-js: 4.1.2
+    dev: false
+
+  /@spruceid/siwe-parser/2.0.2:
+    resolution: {integrity: sha512-9WuA0ios2537cWYu39MMeH0O2KdrMKgKlOBUTWRTXQjCYu5B+mHCA0JkCbFaJ/0EjxoVIcYCXIW/DoPEpw+PqA==}
+    dependencies:
+      '@noble/hashes': 1.2.0
+      apg-js: 4.1.2
+      uri-js: 4.4.1
+      valid-url: 1.0.9
+    dev: true
 
   /@stablelib/aead/1.0.1:
     resolution: {integrity: sha512-q39ik6sxGHewqtO0nP4BuSe3db5G1fEJE8ukvngS2gLkBXyy6E7pLubhbYgnkDFv6V8cWaxcE4Xn0t6LWcJkyg==}
@@ -15106,7 +15116,7 @@ packages:
         optional: true
     dependencies:
       '@next/env': 12.1.6
-      caniuse-lite: 1.0.30001452
+      caniuse-lite: 1.0.30001349
       postcss: 8.4.5
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
@@ -18117,16 +18127,6 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: false
 
-  /siwe/1.1.6:
-    resolution: {integrity: sha512-3WRdEil32Tc2vuNzqJ2/Z/MIvsvy0Nkzc2ov+QujmpHO7tM83dgcb47z0Pu236T4JQkOQCqQkq3AJ/rVIezniA==}
-    peerDependencies:
-      ethers: 5.5.1
-    dependencies:
-      '@spruceid/siwe-parser': 1.1.3
-      '@stablelib/random': 1.0.2
-      apg-js: 4.1.2
-    dev: true
-
   /siwe/1.1.6_ethers@5.6.8:
     resolution: {integrity: sha512-3WRdEil32Tc2vuNzqJ2/Z/MIvsvy0Nkzc2ov+QujmpHO7tM83dgcb47z0Pu236T4JQkOQCqQkq3AJ/rVIezniA==}
     peerDependencies:
@@ -18137,6 +18137,17 @@ packages:
       apg-js: 4.1.2
       ethers: 5.6.8
     dev: false
+
+  /siwe/2.1.3:
+    resolution: {integrity: sha512-d20jADr6MI6oWPDHg9bE+CBsUYkQQ2g4+ayCQ3QapAuYeE/dvFWI/7lwOOV21EuqZMmyrLVOSezgVoq0HAn8yw==}
+    peerDependencies:
+      ethers: ^5.5.1
+    dependencies:
+      '@spruceid/siwe-parser': 2.0.2
+      '@stablelib/random': 1.0.2
+      uri-js: 4.4.1
+      valid-url: 1.0.9
+    dev: true
 
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
@@ -19549,6 +19560,10 @@ packages:
       convert-source-map: 1.8.0
       source-map: 0.7.3
     dev: false
+
+  /valid-url/1.0.9:
+    resolution: {integrity: sha512-QQDsV8OnSf5Uc30CKSwG9lnhMPe6exHtTXLRYX8uMwKENy640pU+2BgBL0LRbDh/eYRahNCS7aewCx0wf3NYVA==}
+    dev: true
 
   /validate-npm-package-license/3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
